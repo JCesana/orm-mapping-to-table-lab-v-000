@@ -11,8 +11,10 @@ class Student
   
   def self.create_table 
     sql =  <<-SQL
+      
+    SQL
+    DB[:conn].execute(sql)
     
-    SQL 
   end 
   
   def self.drop_table 
