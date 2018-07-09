@@ -19,7 +19,6 @@ class Student
         SQL
         
     DB[:conn].execute(sql)
-    
   end 
   
   def self.drop_table
@@ -28,7 +27,6 @@ class Student
       SQL
       
     DB[:conn].execute(sql)
-    
   end 
   
   def save 
@@ -38,7 +36,6 @@ class Student
       SQL
       
     DB[:conn].execute(sql, self.name, self.grade)
-    
   end 
   
   def self.create 
